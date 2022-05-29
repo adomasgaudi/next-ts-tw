@@ -1,7 +1,9 @@
 import React from "react";
-import Head from "../app/components/Head";
 import styled, { css } from "styled-components";
 import tw, { theme } from "twin.macro";
+import Header from "../app/bones/layout/Header";
+import { ContainX } from "../share/infra/components/Contain";
+import Head from "../share/infra/components/Head";
 
 const PP = ({ children }) => (
   <p css={css({ color: theme`colors.purple.500` })}>{children}</p>
@@ -16,7 +18,7 @@ const PropsStyle = styled.input<any>(({ hasBorder }) => [
 ]);
 
 const Text2 = styled.h1`
-  color: ${({ theme }) => theme.darkTheme.body};
+  color: ${({ theme }) => theme.textCol};
 `;
 const Tailwind = styled.h1`
   ${tw`text-gray-400`}
@@ -24,33 +26,41 @@ const Tailwind = styled.h1`
 const TW = tw.h1`
   text-2xl text-yellow-700
 `;
-// const CSS = css`
-//   color: red;
-// `;
+const E800 = styled.h1`
+  ${tw`text-2xl `}
+`;
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <Head title="Analysis Paralysis" />
-      <main>
-        <h1>none</h1>
-        <p className="red">pure css</p>
-        <p className="text-blue-300">tailwind</p>
-        <p tw="text-purple-800">twin</p>
-        <Text>styled</Text>
-        <Text2>styled theme text 2</Text2>
-        <Tailwind>styled + tw</Tailwind>
-        <TW>styled with TW</TW>
-        <PP>jojo pp</PP>
-        {/* <StyledArray>styled array</StyledArray> */}
-        <div
-          css={`
-            color: ${({ theme }) => theme.darkTheme.body};
-          `}
-        >
-          styled with css
-        </div>
-      </main>
-    </div>
+      <Header />
+      <ContainX.H800p3>
+        <main>
+          <h1 className="hover:h_1">none</h1>
+          <h1 className="hero">none</h1>
+          <h1>none</h1>
+          <p className="red">pure css</p>
+          <p className="redd">pure css</p>
+          <p className="text-blue-300">tailwind</p>
+          <p tw="text-purple-800">twin</p>
+          <p>TWIN TWIN</p>
+          <Text>styled</Text>
+          <Text2>styled theme text 2</Text2>
+          <Tailwind>styled + tw</Tailwind>
+          <TW>styled with TW</TW>
+          <E800>800</E800>
+          <PP>jojo pp</PP>
+          {/* <StyledArray>styled array</StyledArray> */}
+          <div
+            css={`
+              color: ${({ theme }) => theme.textCol};
+            `}
+          >
+            styled with css
+          </div>
+        </main>
+      </ContainX.H800p3>
+    </>
   );
 }
