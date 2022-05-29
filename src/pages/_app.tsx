@@ -1,5 +1,4 @@
 import "../app/styles/Global.css";
-import "../app/styles/GlobalTW.css";
 import "tailwindcss/base.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, themeFn } from "../app/styles/Themeconfig";

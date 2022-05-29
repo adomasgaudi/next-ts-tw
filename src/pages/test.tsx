@@ -25,6 +25,9 @@ const Tailwind = styled.h1`
 const TW = tw.h1`
   text-2xl text-yellow-700
 `;
+const E800 = styled.h1`
+  ${tw`text-2xl `}
+`;
 // const CSS = css`
 //   color: red;
 // `;
@@ -35,6 +38,8 @@ export default function Home() {
       <Head title="Analysis Paralysis" />
       <Header />
       <main>
+        <h1 className="hover:h_1">none</h1>
+        <h1 className="hero">none</h1>
         <h1>none</h1>
         <p className="red">pure css</p>
         <p className="redd">pure css</p>
@@ -45,6 +50,7 @@ export default function Home() {
         <Text2>styled theme text 2</Text2>
         <Tailwind>styled + tw</Tailwind>
         <TW>styled with TW</TW>
+        <E800>800</E800>
         <PP>jojo pp</PP>
         {/* <StyledArray>styled array</StyledArray> */}
         <div

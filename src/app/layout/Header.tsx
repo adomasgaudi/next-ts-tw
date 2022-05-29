@@ -16,13 +16,15 @@ const Header: FC<Props> = () => (
           </div>
           {/* {screenWidth > 700 ? <div>LOGO</div> : null} */}
         </div>
-
-        <Link href="/">HOME</Link>
-        <Link href="/" cls="font_wide_thin">
-          HOME red
+        <Link href="/" cls="nav-link">
+          HOME
         </Link>
-        <Link href="/blogs">blogs</Link>
-        <Link href="/test">TEST</Link>
+        <Link href="/blogs" cls="nav-link">
+          BLOGS
+        </Link>
+        <Link href="/test" cls="nav-link">
+          TEST
+        </Link>
       </div>
       <div>Log In</div>
     </div>

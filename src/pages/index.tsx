@@ -8,7 +8,7 @@ export default function Home() {
       <Head title="Overanalysed" />
       <Header />
       <main tw="container px-20 pt-20">
-        <div className="h_1">
+        <div className="hero">
           red text Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Pariatur, fugiat.
         </div>
