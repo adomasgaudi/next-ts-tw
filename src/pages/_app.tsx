@@ -1,7 +1,9 @@
-import "../app/styles/Global.css";
+import "../app/infra/styles/Global.css";
 import "tailwindcss/base.css";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles, themeFn } from "../app/styles/Themeconfig";
+import { GlobalStyles, themeFn } from "../app/infra/styles/Themeconfig";
+import { useEffect } from "react";
+import { useOutline } from "../app/utils/tools/useOutline";
 
 declare module "react" {
   interface Attributes {
@@ -10,6 +12,8 @@ declare module "react" {
 }
 
 function MyApp({ Component, pageProps }) {
+  useOutline();
+
   return (
     <ThemeProvider theme={themeFn(1, 1)}>
       <GlobalStyles />
