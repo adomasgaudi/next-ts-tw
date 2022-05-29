@@ -16,7 +16,7 @@ const PropsStyle = styled.input<any>(({ hasBorder }) => [
 ]);
 
 const Text2 = styled.h1`
-  color: ${({ theme }) => theme.darkTheme.body};
+  color: ${({ theme }) => theme.textCol};
 `;
 const Tailwind = styled.h1`
   ${tw`text-gray-400`}
@@ -45,7 +45,7 @@ export default function Home() {
         {/* <StyledArray>styled array</StyledArray> */}
         <div
           css={`
-            color: ${({ theme }) => theme.darkTheme.body};
+            color: ${({ theme }) => theme.textCol};
           `}
         >
           styled with css

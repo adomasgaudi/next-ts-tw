@@ -1,10 +1,8 @@
 import "../app/styles/Global.css";
 import "../app/styles/GlobalTW.css";
 import "tailwindcss/base.css";
-// import {} from "styled-components/cssprop";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "../app/styles/Themeconfig";
-// import { GlobalStyles } from "twin.macro";
+import { GlobalStyles, themeFn } from "../app/styles/Themeconfig";
 
 declare module "react" {
   interface Attributes {
@@ -12,18 +10,9 @@ declare module "react" {
   }
 }
 
-const theme: any = {
-  darkTheme: {
-    body: "#30ff40",
-    text: "#FAFAFA",
-    toggleBorder: "#6B8096",
-    background: "#999",
-  },
-};
-
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={themeFn(1, 1)}>
       <GlobalStyles />
       <Component {...pageProps} />
     </ThemeProvider>

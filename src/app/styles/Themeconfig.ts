@@ -1,21 +1,26 @@
 import { createGlobalStyle} from "styled-components"
 
-export const lightTheme = {
-  body: '#FFF',
-  text: '#363537',
-  toggleBorder: '#FFF',
-  background: '#363537',
-}
 
-export const darkTheme = {
-  body: '#363537',
-  text: '#FAFAFA',
-  toggleBorder: '#6B8096',
-  background: '#999',
+
+export const themeFn = (font, col) => {
+
+  const fonts = ["m", "inter"]
+  const colors = ["#333", "#f00"]
+
+  const theme: any = {
+    font: fonts[font],
+    fontS: {
+      min: "m",
+      inter: "inter"
+    },
+    textCol: colors[col]
+  };
+  return theme
+
 }
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    background: ${({theme}: any) => theme.darkTheme.body};
+    color: ${({theme}: any) => theme.font};
   }
 `
