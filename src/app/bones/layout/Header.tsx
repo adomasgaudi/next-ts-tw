@@ -9,8 +9,7 @@ const Header: FC<Props> = () => {
   const handleLogout = () => {};
   const [loggedIn, setLoggedIn] = useState<boolean>(true);
   return (
-    <header className="w-full z-10 shadowHov-trello blue">
-      <p>hihihl</p>
+    <header className="w-full z-10 shadowHov-trello mb-20">
       <div tw="flex justify-between items-center p-3">
         <div tw="flex items-center gap-20">
           <Link href="/">

@@ -126,6 +126,11 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
+"@codium/codium-paste-t3@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@codium/codium-paste-t3/-/codium-paste-t3-1.0.1.tgz#0626bcc26e004e5a5c053027879c4c1b49247fa9"
+  integrity sha512-rwvwOdt5PJeZBUyyHX5ZSAkz6LHSOJRsgQ06YwKyT5EPhepKko4VlCCwJ35edzYeUUVLeQWQDI+a7dGol9BXSg==
+
 "@emotion/is-prop-valid@^1.1.0":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-1.1.2.tgz#34ad6e98e871aa6f7a20469b602911b8b11b3a95"
