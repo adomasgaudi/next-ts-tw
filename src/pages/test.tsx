@@ -1,9 +1,9 @@
 import React from "react";
-import Head from "../app/infra/components/Head";
 import styled, { css } from "styled-components";
 import tw, { theme } from "twin.macro";
 import Header from "../app/bones/layout/Header";
-import { ContainX } from "../app/infra/components/Contain";
+import { ContainX } from "../share/infra/components/Contain";
+import Head from "../share/infra/components/Head";
 
 const PP = ({ children }) => (
   <p css={css({ color: theme`colors.purple.500` })}>{children}</p>
@@ -29,9 +29,6 @@ const TW = tw.h1`
 const E800 = styled.h1`
   ${tw`text-2xl `}
 `;
-// const CSS = css`
-//   color: red;
-// `;
 
 export default function Home() {
   return (
