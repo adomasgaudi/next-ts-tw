@@ -1,13 +1,14 @@
 import React from "react";
 import Head from "../app/components/Head";
+import Header from "../app/layout/Header";
 
 export default function Home() {
   return (
     <>
       <Head title="Overanalysed" />
-      {/* <Header /> */}
+      <Header />
       <main tw="container px-20 pt-20">
-        <div className="red">
+        <div className="h_1">
           red text Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Pariatur, fugiat.
         </div>

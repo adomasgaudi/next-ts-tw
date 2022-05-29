@@ -2,6 +2,7 @@ import React from "react";
 import Head from "../app/components/Head";
 import styled, { css } from "styled-components";
 import tw, { theme } from "twin.macro";
+import Header from "../app/layout/Header";
 
 const PP = ({ children }) => (
   <p css={css({ color: theme`colors.purple.500` })}>{children}</p>
@@ -32,11 +33,14 @@ export default function Home() {
   return (
     <div className="">
       <Head title="Analysis Paralysis" />
+      <Header />
       <main>
         <h1>none</h1>
         <p className="red">pure css</p>
+        <p className="redd">pure css</p>
         <p className="text-blue-300">tailwind</p>
         <p tw="text-purple-800">twin</p>
+        <p>TWIN TWIN</p>
         <Text>styled</Text>
         <Text2>styled theme text 2</Text2>
         <Tailwind>styled + tw</Tailwind>
