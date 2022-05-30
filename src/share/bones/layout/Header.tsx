@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import tw from "twin.macro";
 import { Link } from "./Header.styles";
-
 type Props = {};
 
 const Header: FC<Props> = () => {
