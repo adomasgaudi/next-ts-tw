@@ -1,4 +1,4 @@
-// import "../app/infra/styles/Global.css";
+import "../app/infra/styles/Private.css";
 import "../share/infra/styles/Global.css";
 import "tailwindcss/base.css";
 import { ThemeProvider } from "styled-components";

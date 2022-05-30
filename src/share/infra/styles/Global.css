@@ -152,10 +152,10 @@ body .blue {
 
 @tailwind base {}@tailwind components {}@tailwind utilities {}@layer base {
   body .hero {
-    @apply font-[800] text-3xl md:text-4xl lg:text-[64px] lg:leading-[1] text-[#020214] {}
+    @apply font-[800] text-3xl md:text-4xl lg:text-[64px] lg:leading-[1] {}
   }
   body .h_2 {
-    @apply font-[800] text-2xl md:text-3xl lg:text-4xl lg:leading-[1] text-[#020214] {}
+    @apply font-[800] text-2xl md:text-3xl lg:text-4xl lg:leading-[1] {}
   }
   body .cap, body .cap-thin, body .cap-thick {
     @apply text-[14px] tracking-[.2em] {}
