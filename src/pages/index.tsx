@@ -3,8 +3,8 @@ import Header from "../app/bones/layout/Header";
 import Image from "next/image";
 import Footer from "../app/bones/layout/Footer";
 import cube from "../static/img/random3.webp";
-import { ContainX } from "../share/components/Contain";
-import Head from "../share/components/Head";
+import Head from "../share/bones/components/Head";
+import { ContainX } from "../share/bones/components/Contain";
 
 export default function Home() {
   return (

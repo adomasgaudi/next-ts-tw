@@ -2,8 +2,8 @@ import React from "react";
 import styled, { css } from "styled-components";
 import tw, { theme } from "twin.macro";
 import Header from "../app/bones/layout/Header";
-import { ContainX } from "../share/components/Contain";
-import Head from "../share/components/Head";
+import { ContainX } from "../share/bones/components/Contain";
+import Head from "../share/bones/components/Head";
 
 const PP = ({ children }) => (
   <p css={css({ color: theme`colors.purple.500` })}>{children}</p>
