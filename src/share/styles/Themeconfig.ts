@@ -20,7 +20,7 @@ export const themeFn = (font, col) => {
 }
 
 export const GlobalStyles = createGlobalStyle`
-  body {
-    color: ${({theme}: any) => theme.font};
-  }
+  /* body {
+    color: ${({theme}: any) => theme.textCol};
+  } */
 `

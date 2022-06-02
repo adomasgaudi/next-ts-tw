@@ -1,4 +1,6 @@
 import React, { ReactNode } from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 import { base } from "../../utils/tools/baseHOC";
 import { Contain } from "./Contain";
 
@@ -16,16 +18,19 @@ const L = base(FiftyFiftyLeft, {
   className: "w-full md:w-[50%] justify-center items-center",
 });
 
-const Rxl = base(FiftyFiftyRight, {
-  className: "w-full xl:w-[50%] justify-center items-center",
-});
-const Lxl = base(FiftyFiftyLeft, {
-  className: "w-full xl:w-[50%] justify-center items-center",
-});
+const S = styled.div<any>(({ size }) => [
+  `
+  width: 100%;
+  @media (min-width: 768px) {
+    width: ${size}%;
+  }
+  `,
+]);
 
-export const Div50 = {
-  R,
-  L,
-  Rxl,
-  Lxl,
+export const Div = {
+  S50: {
+    R,
+    L,
+  },
+  S,
 };

@@ -18,3 +18,19 @@ export const useOutline = () => {
     });
   }, []);
 };
+
+export const useSquare = (id: string) => {
+  return useEffect(() => {
+    const el = document.getElementById(id);
+    if (el) el.style.height = `${el.offsetWidth}px`;
+  }, []);
+};
+
+export const useWindow = (handleScroll: any) => {
+  return useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+};
