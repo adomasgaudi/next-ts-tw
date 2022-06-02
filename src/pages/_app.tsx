@@ -2,9 +2,8 @@ import "../app/infra/styles/Private.css";
 import "../share/styles/Global.css";
 import "tailwindcss/base.css";
 import { ThemeProvider } from "styled-components";
-import { useEffect } from "react";
-import { useOutline } from "../share/utils/tools/useOutline";
 import { GlobalStyles, themeFn } from "../share/styles/Themeconfig";
+import { useOutline } from "../share/utils/tools/useTools";
 
 declare module "react" {
   interface Attributes {
